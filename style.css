@@ -1,8 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(font/ccs?family=Lato);
+
 ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+:root {
+  --size: 300px;
 }
 /* nabar */
 .navbar .nav-item .nav-link,
@@ -24,7 +30,86 @@
   height: 25px;
 }
 /* body */
+body {
+  color: #650808;
+  font-family: Lato;
+}
 .bod {
   background-image: url(images/back.jpg);
-  height: auto;
+  /* backdrop-filter: blur(2px);
+  backdrop-filter: brightness(60%);
+  backdrop-filter: contrast(40%);
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+  backdrop-filter: grayscale(30%);
+  backdrop-filter: hue-rotate(120deg);
+  backdrop-filter: invert(70%);
+  backdrop-filter: opacity(20%);
+  backdrop-filter: sepia(90%);
+  backdrop-filter: saturate(80%); */
+}
+h1 {
+  display: inline-block;
+  font-size: 80px;
+  line-height: 0.9;
+  padding: 20px;
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase;
+  background: radial-gradient(
+      circle farthest-corner at center center,
+      rgb(240, 7, 7),
+      #111
+    )
+    no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* le dés sur l'index */
+.cube {
+  width: var(--size);
+  height: var(--size);
+  transform-style: preserve-3d;
+  /* transform: rotateY(30deg) rotateZ(30deg); */
+  animation: spin 20s infinite linear;
+}
+.side {
+  position: absolute;
+  opacity: 0.8;
+  width: var(--size);
+  height: var(--size);
+}
+#front {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: translateZ(calc(var(--size) / 2));
+}
+#bottom {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: rotateX(270deg) translateY(calc(-1 * (var(--size) / 2)));
+  transform-origin: top center;
+}
+#top {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: rotateX(-270deg) translateY(calc(var(--size) / 2));
+  transform-origin: bottom center;
+}
+#left {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: rotateY(-270deg) translateX(calc((var(--size) / 2)));
+  transform-origin: top right;
+}
+#right {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: rotateY(270deg) translateX(calc(-1 * (var(--size) / 2)));
+  transform-origin: top left;
+}
+#back {
+  background: url(images/lune.jpg) no-repeat center/cover;
+  transform: rotateY(-180deg) translateZ(calc((var(--size) / 2)));
+}
+@keyframes spin {
+  from {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
 }
