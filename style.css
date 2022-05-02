@@ -65,11 +65,14 @@ h1 {
 }
 /* le dés sur l'index */
 .cube {
+  margin-top: 10%;
   width: var(--size);
   height: var(--size);
   transform-style: preserve-3d;
-  /* transform: rotateY(30deg) rotateZ(30deg); */
   animation: spin 20s infinite linear;
+}
+.cube:hover{
+  animation-play-state: paused;
 }
 .side {
   position: absolute;
