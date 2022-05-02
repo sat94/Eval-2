@@ -1,0 +1,30 @@
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* nabar */
+.navbar .nav-item .nav-link,
+.dropdown-menu .dropdown-item {
+  font-size: 22px;
+  color: #7c7c90a6;
+}
+.navbar .nav-item .nav-link:hover,
+.dropdown-menu .dropdown-item:hover,
+.navbar .nav-item .nav-link.active,
+.dropdown .dropdown-menu .dropdown-item.active {
+  color: #650808;
+}
+.navbar button {
+  background-color: #ded7d7;
+}
+.navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+}
+/* body */
+.bod {
+  background-image: url(images/back.jpg);
+  height: auto;
+}
