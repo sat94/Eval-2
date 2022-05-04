@@ -82,7 +82,7 @@ h1 {
 }
 .side {
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.8; 
   width: var(--size);
   height: var(--size);
 }
@@ -142,5 +142,15 @@ h1 {
 }
 /* le bouton commencer */
 .bouton {
-  font-family: Lato !important
+  font-family: Lato;
+}
+footer{
+  position:absolute;
+  bottom: 0;
+  width:100%;
+  padding-top:50px; 
+}
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 22px;
 }
