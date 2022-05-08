@@ -50,7 +50,7 @@ body {
   backdrop-filter: sepia(90%);
   backdrop-filter: saturate(80%);
 }
-.bodi{
+.bodi {
   background-image: url(images/back.jpg);
   width: 50%;
 }
@@ -85,7 +85,7 @@ h1 {
 }
 .side {
   position: absolute;
-  opacity: 0.9; 
+  opacity: 0.9;
   width: var(--size);
   height: var(--size);
 }
@@ -147,23 +147,23 @@ h1 {
 .bouton {
   font-family: Lato;
 }
-footer{
-  position:absolute;
+footer {
+  position: absolute;
   bottom: 0;
-  width:100%;
-  padding-top:50px; 
+  width: 100%;
+  padding-top: 50px;
 }
-p{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
 }
 /* page start */
-.back{
+.back {
   position: absolute;
   background-color: #9b92926f;
   width: 50%;
   height: auto;
 }
-.placement{
+.placement {
   margin-top: 150px;
 }
