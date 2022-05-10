@@ -38,6 +38,16 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -85,61 +95,79 @@
       </div>
     </nav>
   </header>
-  <body  class="bod">
+  <body class="bod">
     <div class="container">
-      <div class="row">
-        <h3 class="text-center mt-5">NEW GAMES</h1>       
+      <div class="row mt-5">
+        <button class="btn-new">
+          <i class="ion-ios-plus-outline"></i>New game
+        </button>
       </div>
     </div>
     <div class="row">
       <div class="col-4">
-        <h1 class="text-center m-5">Player 1</h1><br>
-        <h1 class="text-center" id="score1">0</h1>
+        <div class="player-0-panel active">
+          <div class="text-center player-name m-5" id="name-0">Player 1</div>
+          <div class="text-center score" id="score1">70</div>
+        </div>
       </div>
       <div class="col-4">
         <div class="row placement">
-        <div class="cube mx-auto">
-          <div class="side" id="front">
-            <div class="side" id="face1"></div>
-          </div>
-          <div class="side" id="bottom">
-            <div class="side" id="face2"></div>
-          </div>
-          <div class="side" id="top"><div class="side" id="face3"></div>
-        </div>
-          <div class="side" id="left">
-            <div class="side" id="face4"></div>
-          </div>
-          <div class="side" id="right">
-            <div class="side" id="face5"></div>
-          </div>
-          <div class="side" id="back">
-            <div class="side" id="face6"></div>
+          <div class="cube mx-auto">
+            <div class="side" id="front">
+              <div class="side" id="face1"></div>
+            </div>
+            <div class="side" id="bottom">
+              <div class="side" id="face2"></div>
+            </div>
+            <div class="side" id="top">
+              <div class="side" id="face3"></div>
+            </div>
+            <div class="side" id="left">
+              <div class="side" id="face4"></div>
+            </div>
+            <div class="side" id="right">
+              <div class="side" id="face5"></div>
+            </div>
+            <div class="side" id="back">
+              <div class="side" id="face6"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>  
-     <div class="col-4"> 
-        <h1 class="text-center m-5">Player 2</h1>
-        <h1 class="text-center" id="score2">0</h2>
-      </div> 
-      <div class="container placement">
+      <div class="col-4">
+        <div class="player-1-panel">
+        <div class="text-center player-name m-5" id="name-1">Player 2</div>
+        <div class="text-center score" id="score2">25</div>
+        </div>
+      </div>
+      <div class="container place">
         <div class="row m-5">
-        <div class="col-4">
-          <h3 class="text-center">Current</h3><br>
-          <h3 class="text-center" id="current1">0</h3>
-        </div>
-        <div class="col-4">
-          <h3 class="text-center">ROLL DICE</h3><br>
-          <h3 class="text-center"> HOLD</h3>
-        </div>
-        <div class="col-4">
-          <h3 class="text-center">Current</h3><br>
-          <h3 class="text-center" id="current1">0</h3>
+          <div class="col-4">
+            <div class="current-box">
+                <h3 class="text-center">Current</h3>
+                <br />
+                <h2 class="text-center" id="current1">0</h2>
+              </div>
+            </div>
+            <div class="col-4">
+              <button class="btn-roll">
+                <i class="ion-ios-loop"></i>Roll dice</button
+              ><br /><br /><br />
+              <button class="btn-hold">
+                <i class="ion-ios-download-outline"></i>Hold
+              </button>
+            </div>
+            <div class="col-4">
+              <div class="current-box">
+                <h3 class="text-center">Current</h3>
+                <br />
+                <h3 class="text-center" id="current2">0</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-          
-        
-      </div>
+    </div>
+    <script src="module.js"></script>
   </body>
 </html>
