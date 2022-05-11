@@ -147,29 +147,28 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 button:hover {
+  color: #cc0909;
   font-weight: 600;
 }
-button:hover i {
+button:hover .icone {
   margin-right: 30px;
 }
 button:focus {
   outline: none;
 }
-i {
-  color: rgb(240, 7, 7);
+.icone {
   display: inline-block;
   margin-right: 15px;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
   vertical-align: text-top;
-  margin-top: -4px;
   transition: margin 0.3s;
 }
 .active {
   background-color: #f7f7f7;  
 }
 .current-box {
-  background-color: rgb(240, 7, 7);
+  background-color:#cc0909;
   color: #fff;
   width: 40%;
   margin: 0 auto;
@@ -195,7 +194,7 @@ i {
   content: "\2022";
   font-size: 67px;
   position: absolute;
-  color: rgb(240, 7, 7);
+  color: #cc0909;
   top: 5px;
   right: -35px;
 }
@@ -213,4 +212,8 @@ i {
 }
 .logo{
   width: 40px;
+  transition: 2s all;
+}
+.logo:hover{
+  width: 70px;
 }
