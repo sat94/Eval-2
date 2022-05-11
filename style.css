@@ -12,6 +12,7 @@
 /* nabar */
 .navbar .nav-item .nav-link,
 .dropdown-menu .dropdown-item {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
   color: #7c7c90a6;
 }
@@ -24,10 +25,7 @@
 .navbar button {
   background-color: #ded7d7;
 }
-.navbar-toggler-icon {
-  width: 25px;
-  height: 25px;
-}
+
 /* body */
 body {
   min-height: 100vh;
@@ -38,10 +36,6 @@ body {
 }
 .bod {
   background-image: url(images/back.jpg);
-}
-.bodi {
-  background-image: url(images/back.jpg);
-  width: 50%;
 }
 h1 { 
   font-size: 60px;
@@ -216,4 +210,7 @@ i {
 .dice {
   width: var(--size);
   height: var(--size);   
+}
+.logo{
+  width: 40px;
 }
