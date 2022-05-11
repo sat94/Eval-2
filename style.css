@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 :root {
-  --size: 200px;
+  --size: 250px;
 }
 /* nabar */
 .navbar .nav-item .nav-link,
@@ -126,7 +126,7 @@ p {
   height: auto;
 }
 .placement {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .place{
   margin-top: 50px;
@@ -170,7 +170,7 @@ button:focus {
 .current-box {
   background-color:#cc0909;
   color: #fff;
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   padding: 12px;
   text-align: center;
@@ -211,9 +211,49 @@ button:focus {
   height: var(--size);   
 }
 .logo{
-  width: 40px;
+  width: 30px;
   transition: 2s all;
 }
 .logo:hover{
-  width: 70px;
+  width: 50px;
+}
+@media only screen and (max-width: 1300px) {
+  :root {
+    --size: 200px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  .player-name{
+    font-size: 25px;
+  }
+  .score{
+    font-size: 48px;
+  }
+  .media{
+    font-size: 12px; 
+  }
+  .placement {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    --size: 100px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  .player-name{
+    font-size: 17px;
+ }
+ .score{
+   font-size: 48px;
+ }
+ .media{
+   font-size: 12px; 
+ }
+.placement {
+  margin-top: 100px;
+}
 }

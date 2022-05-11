@@ -1,12 +1,10 @@
-let scores, round, player, game;
-
-init();
+let scores, round, player, game, name1, name2;
 
 document.querySelector(".btn-new").addEventListener("click", init);
 
 function init() {
-  name1 = "player 1";
-  name2 = "player 2";
+  name1 = "player 1"
+  name2 = "player 2"
   scores = [0, 0];
   player = 0;
   round = 0;
